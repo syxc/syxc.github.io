@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en_US"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 关于 Android 开发中经典的 65536 问题的一些总结 · syxc</title><meta name="description" content="关于 Android 开发中经典的 65536 问题的一些总结 - syxc"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://syxc.github.io/atom.xml" title="syxc"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/syxc" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/syxc" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">关于 Android 开发中经典的 65536 问题的一些总结</h1><div class="post-info">Nov 8, 2013</div><div class="post-content"><h2 id="65536-问题-解决方案"><a href="#65536-问题-解决方案" class="headerlink" title="65536 问题/解决方案"></a>65536 问题/解决方案</h2><p>Android 开发中，经典的 65536 问题不少人应该都碰到过，也就是这个：</p>
+<p><code>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</code></p>
+<p>对于这个问题的原因，这里我借用<a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">这篇文章</a>的一段话概括下，感谢文章作者的总结。</p>
+<blockquote>
+<p>这个错误是 Android 应用的方法总数限制造成的。Android 平台的 Java 虚拟机 Dalvik 在执行 DEX 格式的 Java 应用程序时，使用原生类型 short 来索引 DEX 文件中的方法。这意味着单个 DEX 文件可被引用的方法总数被限制为 65536。通常 APK 包含一个 classes.dex 文件，因此 Android 应用的方法总数不能超过这个数量，这包括 Android 框架、类库和你自己开发的代码。</p>
+</blockquote>
+<p>原因了解了，如何解决，这里我简单汇总一些方案：</p>
+<h3 id="Google-官方的-MultiDex-方案"><a href="#Google-官方的-MultiDex-方案" class="headerlink" title="Google 官方的 MultiDex 方案"></a>Google 官方的 MultiDex 方案</h3><p><a href="https://developer.android.com/studio/build/multidex.html" target="_blank" rel="external">Configure Apps with Over 64K Methods</a></p>
+<h3 id="美团的多-Dex-分包、动态异步加载方案"><a href="#美团的多-Dex-分包、动态异步加载方案" class="headerlink" title="美团的多 Dex 分包、动态异步加载方案"></a>美团的多 Dex 分包、动态异步加载方案</h3><p><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></p>
+<h3 id="插件化，动态加载方案"><a href="#插件化，动态加载方案" class="headerlink" title="插件化，动态加载方案"></a>插件化，动态加载方案</h3><ul>
+<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">DynamicLoadApk</a></li>
+<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
+<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
+<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
+<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
+</ul>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>Hack Dalvik VM 解决 Android 2.3 DEX/LinearAllocHdr 超限</p>
+<ul>
+<li><a href="http://viila.info/2014/04/android-2-3-dex-max-function-problem/" target="_blank" rel="external">http://viila.info/2014/04/android-2-3-dex-max-function-problem/</a></li>
+<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">https://github.com/viilaismonster/LinearAllocFix</a></li>
+</ul>
+<h2 id="一些经验"><a href="#一些经验" class="headerlink" title="一些经验"></a>一些经验</h2><blockquote>
+<p>要预防 65536 问题，其实可以理解为就是如何尽可能的控制目标 method 数。</p>
+</blockquote>
+<p>关于第三方库的选择(尽量用小而美的工具包来辅助开发)</p>
+<ul>
+<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 以内；</li>
+<li>不建议使用 Guava 这个工具包，method 总数在 1w 以上，可以考虑用 Apache 的 commons 相关工具包代替，另外，<a href="https://github.com/oblac/jodd" target="_blank" rel="external">Jodd</a> 也是不错的选择； </li>
+<li>如果 App 有用到 Google Protobuf，那么推荐用 Square 的 Wire；</li>
+<li>相同功能的第三方库，选择其中一个合适的即可，如上面说的 JSON 相关的，还有图片加载、网络库等；</li>
+<li>如果可以，尝试用合适的方式抽取一些类库中需要的那部分代码来辅助开发；</li>
+<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a> 是个好工具，还有 <a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
+</ul>
+<p>总之，慎用第三方库。</p>
+<p>另外，再推荐一篇文章，<a href="https://ingramchen.io/blog/2014/09/prevention-of-android-dex-64k-method-size-limit.html" target="_blank" rel="external">預防 Android Dex 64k Method Size Limit</a></p>
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>当遇到问题时，我习惯这样来思考：</p>
+<ul>
+<li>问题出现的原因是什么？<ul>
+<li>低级错误，粗心大意造成？</li>
+<li>对某些原理(API)不了解？</li>
+<li>确实是某(些)疑难杂症？</li>
+</ul>
+</li>
+<li>如何解决？<ul>
+<li>Review, Review, Review</li>
+<li>查文档，找相关资料</li>
+<li>善用 Google 找解决方案(大部分问题都是有靠谱的方案的)</li>
+</ul>
+</li>
+</ul>
+<p>概括来说就是：</p>
+<blockquote>
+<p>发现问题 - 分析问题 - 解决问题 - 总结经验(教训)</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="http://android-developers.blogspot.hk/2011/07/custom-class-loading-in-dalvik.html" target="_blank" rel="external">Android 打包多个 dex 并运行时动态加载类</a></li>
+<li><a href="http://www.trinea.cn/android/android-plugin/" target="_blank" rel="external">Android 插件化，动态升级</a></li>
+<li><a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">Android应用打破65K方法数限制</a></li>
+<li><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></li>
+<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">Hack Dalvik VM解决Android 2.3 DEX/LinearAllocHdr超限</a></li>
+<li><a href="https://github.com/mmin18/Dex65536" target="_blank" rel="external">Dex65536</a></li>
+<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">dynamic-load-apk</a></li>
+<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
+<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
+<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
+<li><a href="https://github.com/CtripMobile/DynamicAPK" target="_blank" rel="external">DynamicAPK</a></li>
+<li><a href="https://github.com/jasonross/Nuwa" target="_blank" rel="external">Nuwa</a></li>
+<li><a href="https://github.com/alibaba/AndFix" target="_blank" rel="external">AndFix</a></li>
+<li><a href="https://github.com/wequick/Small" target="_blank" rel="external">Small</a></li>
+<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
+<li><a href="http://mp.weixin.qq.com/s?spm=a1z2e.7794127.0.0.Q7LExa&amp;__biz=MzAwNDY1ODY2OQ==&amp;mid=2649286306&amp;idx=1&amp;sn=d6b2865e033a99de60b2d4314c6e0a25&amp;scene=0&amp;__nc=1#wechat_redirect" target="_blank" rel="external">微信Android热补丁实践演进之路</a></li>
+<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a></li>
+<li><a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2013/11/08/technology/others/2014-12/jenkins/" class="prev">PREV</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
+var disqus_identifier = '2013/11/08/technology/others/2014-12/android_65536/';
+var disqus_title = '关于 Android 开发中经典的 65536 问题的一些总结';
+var disqus_url = 'https://syxc.github.io/2013/11/08/technology/others/2014-12/android_65536/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//syxc.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2016 <a href="https://syxc.github.io">syxc</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-74437073-1",'auto');ga('send','pageview');</script></body></html>
