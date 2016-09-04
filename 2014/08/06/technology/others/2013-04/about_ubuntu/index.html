@@ -12,7 +12,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Setting up man-db (2.5.7-8) ...</div><div class="line">debconf: DbDriver &quot;config&quot;: could not open /var/cache/debconf/config.dat</div><div class="line">dpkg: error processing man-db (--configure):</div><div class="line">subprocess installed post-installation script returned error exit status 1</div></pre></td></tr></table></figure>
 <p>A web search quickly revealed the solution:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /var/cache/debconf</div><div class="line">sudo apt-get install debconf --reinstall</div></pre></td></tr></table></figure>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/09/04/psychology/jingzixiaoying/" class="prev">PREV</a><a href="/2013/11/08/technology/others/2012-06/gitolite/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
+</div></article></div></section><footer><div class="paginator"><a href="/2016/09/04/psychology/jingzixiaoying/" class="prev">PREV</a><a href="/2013/11/08/technology/others/2013-06/custom_safari/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
 var disqus_identifier = '2014/08/06/technology/others/2013-04/about_ubuntu/';
 var disqus_title = 'Ubuntu 上 MySQL 的那些事';
 var disqus_url = 'https://syxc.github.io/2014/08/06/technology/others/2013-04/about_ubuntu/';

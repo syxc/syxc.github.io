@@ -94,6 +94,99 @@
   </entry>
   
   <entry>
+    <title>ML-10.8 改 Safari 字型設定更美觀</title>
+    <link href="https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/"/>
+    <id>https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/</id>
+    <published>2013-11-08T08:25:28.000Z</published>
+    <updated>2016-09-04T10:21:59.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="safari-font-css"><a href="#safari-font-css" class="headerlink" title="safari-font.css"></a>safari-font.css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  zoom: 100%;</div><div class="line">&#125;</div><div class="line"></div><div class="line">* &#123;</div><div class="line">  font-family: &quot;Helvetica&quot; !important;	</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 针对Github字体问题 */</div><div class="line">.octicon, .mega-octicon &#123;</div><div class="line">  font-family: &quot;github-octicons&quot; !important;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>via <a href="http://iphone4.tw/forums/showthread.php?t=187335" target="_blank" rel="external">http://iphone4.tw/forums/showthread.php?t=187335</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;safari-font-css&quot;&gt;&lt;a href=&quot;#safari-font-css&quot; class=&quot;headerlink&quot; title=&quot;safari-font.css&quot;&gt;&lt;/a&gt;safari-font.css&lt;/h2&gt;&lt;figure class=&quot;highli
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在终端配置 Ubuntu 的 IP/DNS</title>
+    <link href="https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/"/>
+    <id>https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/</id>
+    <published>2013-11-08T08:25:28.000Z</published>
+    <updated>2016-09-04T10:21:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="启动终端，打开配置文件"><a href="#启动终端，打开配置文件" class="headerlink" title="启动终端，打开配置文件"></a>启动终端，打开配置文件</h2><p><code>sudo cp /etc/network/interfaces  /etc/network/interfacesbak  # 备份原有配置文件</code><br><code>sudo vim /etc/network/interfaces  # 编辑网卡配置文件</code></p>
+<h2 id="接着修改相应内容，例如"><a href="#接着修改相应内容，例如" class="headerlink" title="接着修改相应内容，例如"></a>接着修改相应内容，例如</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">auto eth0</div><div class="line">iface eth0 inet static  # static 固定ip，dhcp 动态ip</div><div class="line">address 192.168.1.88</div><div class="line">netmask 255.255.255.0</div><div class="line">gateway 192.168.1.1</div><div class="line"></div><div class="line">echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf  # 写入DNS服务器信息至resolv.conf</div></pre></td></tr></table></figure>
+<h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><p><code>/etc/init.d/networking restart  # 重启网络</code></p>
+<p>这样，IP、DNS 就算配置好了！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;启动终端，打开配置文件&quot;&gt;&lt;a href=&quot;#启动终端，打开配置文件&quot; class=&quot;headerlink&quot; title=&quot;启动终端，打开配置文件&quot;&gt;&lt;/a&gt;启动终端，打开配置文件&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo cp /etc/network/interfa
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal</title>
+    <link href="https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/"/>
+    <id>https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/</id>
+    <published>2013-11-08T08:25:28.000Z</published>
+    <updated>2016-09-04T10:22:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>ZIP – Cross Platform</strong></p>
+<p>First up is ZIP one of the most commonly used compression techniques used across all platforms</p>
+<p>To compress</p>
+<p><code>zip -r archive_name.zip folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>unzip archive_name.zip</code></p>
+<p>If you want to make a zip without those invisible Mac resource files such as “_MACOSX” or “._Filename” and .ds store files, use the “-X” option in the command so:</p>
+<p><code>zip -r -X archive_name.zip folder_to_compress</code></p>
+<p><strong>TAR.GZ – Cross Platform</strong>    </p>
+<p>Second up is TAR, an old favourite on Unix/Linux – you add the GZ for the compression – compresses tighter than zip</p>
+<p>To compress</p>
+<p><code>tar -zcvf archive_name.tar.gz folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>tar -zxvf archive_name.tar.gz</code></p>
+<p><strong>TAR.BZ2 – Cross Platform</strong></p>
+<p>A variation on TAR GZ but with better compression than both tar.gz and zip.</p>
+<p>To compress</p>
+<p><code>tar -jcvf archive_name.tar.bz2 folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>tar -jxvf archive_name.tar.bz2</code></p>
+<p><strong>DMG – OSX Only</strong></p>
+<p>This one is Mac OSX native only – for a GUI interface use /Applications/Utilities/Disk Utility – for command line use:</p>
+<p>To create</p>
+<p><code>hdiutil create -format UDZO -srcfolder folder_to_compress archive_name.dmg</code></p>
+<p>To mount</p>
+<p><code>hdiutil attach archive_name.dmg</code></p>
+<p>To view</p>
+<p><code>ls -lah /Volumes/archive_name/</code></p>
+<p>To Eject</p>
+<p><code>hdiutil eject /Volumes/archive_name/</code></p>
+<p>You can also use a number of different formats for creating a .dmg</p>
+<p>via <a href="http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/" target="_blank" rel="external">http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/</a>                                        </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;ZIP – Cross Platform&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First up is ZIP one of the most commonly used compression techniques used across all platfor
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用 Gitolite 搭建 Git 服务器</title>
     <link href="https://syxc.github.io/2013/11/08/technology/others/2012-06/gitolite/"/>
     <id>https://syxc.github.io/2013/11/08/technology/others/2012-06/gitolite/</id>
@@ -189,99 +282,6 @@
   </entry>
   
   <entry>
-    <title>在终端配置 Ubuntu 的 IP/DNS</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:21:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="启动终端，打开配置文件"><a href="#启动终端，打开配置文件" class="headerlink" title="启动终端，打开配置文件"></a>启动终端，打开配置文件</h2><p><code>sudo cp /etc/network/interfaces  /etc/network/interfacesbak  # 备份原有配置文件</code><br><code>sudo vim /etc/network/interfaces  # 编辑网卡配置文件</code></p>
-<h2 id="接着修改相应内容，例如"><a href="#接着修改相应内容，例如" class="headerlink" title="接着修改相应内容，例如"></a>接着修改相应内容，例如</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">auto eth0</div><div class="line">iface eth0 inet static  # static 固定ip，dhcp 动态ip</div><div class="line">address 192.168.1.88</div><div class="line">netmask 255.255.255.0</div><div class="line">gateway 192.168.1.1</div><div class="line"></div><div class="line">echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf  # 写入DNS服务器信息至resolv.conf</div></pre></td></tr></table></figure>
-<h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><p><code>/etc/init.d/networking restart  # 重启网络</code></p>
-<p>这样，IP、DNS 就算配置好了！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;启动终端，打开配置文件&quot;&gt;&lt;a href=&quot;#启动终端，打开配置文件&quot; class=&quot;headerlink&quot; title=&quot;启动终端，打开配置文件&quot;&gt;&lt;/a&gt;启动终端，打开配置文件&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo cp /etc/network/interfa
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ML-10.8 改 Safari 字型設定更美觀</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:21:59.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="safari-font-css"><a href="#safari-font-css" class="headerlink" title="safari-font.css"></a>safari-font.css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  zoom: 100%;</div><div class="line">&#125;</div><div class="line"></div><div class="line">* &#123;</div><div class="line">  font-family: &quot;Helvetica&quot; !important;	</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 针对Github字体问题 */</div><div class="line">.octicon, .mega-octicon &#123;</div><div class="line">  font-family: &quot;github-octicons&quot; !important;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>via <a href="http://iphone4.tw/forums/showthread.php?t=187335" target="_blank" rel="external">http://iphone4.tw/forums/showthread.php?t=187335</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;safari-font-css&quot;&gt;&lt;a href=&quot;#safari-font-css&quot; class=&quot;headerlink&quot; title=&quot;safari-font.css&quot;&gt;&lt;/a&gt;safari-font.css&lt;/h2&gt;&lt;figure class=&quot;highli
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:22:09.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>ZIP – Cross Platform</strong></p>
-<p>First up is ZIP one of the most commonly used compression techniques used across all platforms</p>
-<p>To compress</p>
-<p><code>zip -r archive_name.zip folder_to_compress</code></p>
-<p>To extract</p>
-<p><code>unzip archive_name.zip</code></p>
-<p>If you want to make a zip without those invisible Mac resource files such as “_MACOSX” or “._Filename” and .ds store files, use the “-X” option in the command so:</p>
-<p><code>zip -r -X archive_name.zip folder_to_compress</code></p>
-<p><strong>TAR.GZ – Cross Platform</strong>    </p>
-<p>Second up is TAR, an old favourite on Unix/Linux – you add the GZ for the compression – compresses tighter than zip</p>
-<p>To compress</p>
-<p><code>tar -zcvf archive_name.tar.gz folder_to_compress</code></p>
-<p>To extract</p>
-<p><code>tar -zxvf archive_name.tar.gz</code></p>
-<p><strong>TAR.BZ2 – Cross Platform</strong></p>
-<p>A variation on TAR GZ but with better compression than both tar.gz and zip.</p>
-<p>To compress</p>
-<p><code>tar -jcvf archive_name.tar.bz2 folder_to_compress</code></p>
-<p>To extract</p>
-<p><code>tar -jxvf archive_name.tar.bz2</code></p>
-<p><strong>DMG – OSX Only</strong></p>
-<p>This one is Mac OSX native only – for a GUI interface use /Applications/Utilities/Disk Utility – for command line use:</p>
-<p>To create</p>
-<p><code>hdiutil create -format UDZO -srcfolder folder_to_compress archive_name.dmg</code></p>
-<p>To mount</p>
-<p><code>hdiutil attach archive_name.dmg</code></p>
-<p>To view</p>
-<p><code>ls -lah /Volumes/archive_name/</code></p>
-<p>To Eject</p>
-<p><code>hdiutil eject /Volumes/archive_name/</code></p>
-<p>You can also use a number of different formats for creating a .dmg</p>
-<p>via <a href="http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/" target="_blank" rel="external">http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/</a>                                        </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;strong&gt;ZIP – Cross Platform&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;First up is ZIP one of the most commonly used compression techniques used across all platfor
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>在 OSX 上面安装 Jenkins</title>
     <link href="https://syxc.github.io/2013/11/08/technology/others/2014-12/jenkins/"/>
     <id>https://syxc.github.io/2013/11/08/technology/others/2014-12/jenkins/</id>
@@ -321,7 +321,7 @@
     <link href="https://syxc.github.io/2013/11/08/technology/others/2014-12/android_65536/"/>
     <id>https://syxc.github.io/2013/11/08/technology/others/2014-12/android_65536/</id>
     <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T15:03:26.000Z</updated>
+    <updated>2016-09-04T18:11:14.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="65536-问题-解决方案"><a href="#65536-问题-解决方案" class="headerlink" title="65536 问题/解决方案"></a>65536 问题/解决方案</h2><p>Android 开发中，经典的 65536 问题不少人应该都碰到过，也就是这个：</p>
 <p><code>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</code></p>
@@ -349,7 +349,7 @@
 </blockquote>
 <p>关于第三方库的选择(尽量用小而美的工具包来辅助开发)</p>
 <ul>
-<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 以内；</li>
+<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 左右；</li>
 <li>不建议使用 Guava 这个工具包，method 总数在 1w 以上，可以考虑用 Apache 的 commons 相关工具包代替，另外，<a href="https://github.com/oblac/jodd" target="_blank" rel="external">Jodd</a> 也是不错的选择； </li>
 <li>如果 App 有用到 Google Protobuf，那么推荐用 Square 的 Wire；</li>
 <li>相同功能的第三方库，选择其中一个合适的即可，如上面说的 JSON 相关的，还有图片加载、网络库等；</li>

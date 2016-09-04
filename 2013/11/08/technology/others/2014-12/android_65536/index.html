@@ -24,7 +24,7 @@
 </blockquote>
 <p>关于第三方库的选择(尽量用小而美的工具包来辅助开发)</p>
 <ul>
-<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 以内；</li>
+<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 左右；</li>
 <li>不建议使用 Guava 这个工具包，method 总数在 1w 以上，可以考虑用 Apache 的 commons 相关工具包代替，另外，<a href="https://github.com/oblac/jodd" target="_blank" rel="external">Jodd</a> 也是不错的选择； </li>
 <li>如果 App 有用到 Google Protobuf，那么推荐用 Square 的 Wire；</li>
 <li>相同功能的第三方库，选择其中一个合适的即可，如上面说的 JSON 相关的，还有图片加载、网络库等；</li>
