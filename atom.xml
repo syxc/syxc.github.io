@@ -65,7 +65,7 @@
     <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/"/>
     <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/</id>
     <published>2014-12-01T00:00:00.000Z</published>
-    <updated>2016-09-05T04:15:34.000Z</updated>
+    <updated>2016-09-05T04:48:13.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="65536-问题-解决方案"><a href="#65536-问题-解决方案" class="headerlink" title="65536 问题/解决方案"></a>65536 问题/解决方案</h2><p>Android 开发中，经典的 65536 问题不少人应该都碰到过，也就是这个：</p>
 <p><code>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</code></p>
