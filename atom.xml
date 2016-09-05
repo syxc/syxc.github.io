@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://syxc.github.io/"/>
-  <updated>2016-09-04T10:19:35.000Z</updated>
+  <updated>2016-09-04T10:19:30.000Z</updated>
   <id>https://syxc.github.io/</id>
   
   <author>
@@ -14,25 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>何为重要？</title>
-    <link href="https://syxc.github.io/2016/09/04/home/what_is_important/"/>
-    <id>https://syxc.github.io/2016/09/04/home/what_is_important/</id>
-    <published>2016-09-04T09:20:06.000Z</published>
-    <updated>2016-09-04T10:19:35.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>无论你是否准备好，终有一天一切都会结束。<br>那时将不再有日出，不再有白昼，也不再有分秒的光阴。<br>所有你曾经拥有的，无论是珍藏的还是已经遗忘了的，都将成为他人之物。<br>财富、名誉以及世俗的权利将毫无用处。所拥有的和他人亏欠你的都不再重要。<br>所有的不满、愤恨、挫折以及嫉妒终将烟消云散。<br>同样，所有的希望、雄心、计划以及未尽之事也将终止。曾经看重的成败得失也将淡去。<br>你从哪里来，曾经生活的方式也将不再重要。<br>是否漂亮，是否优秀，这些也不再有任何的关系。你的性别、肤色以及种族也无所谓了。<br>那究竟什么是重要的？我们有生之年的价值又用什么来衡量？<br>重要的不是你买了什么，而是你创造了什么，不是你得到了什么，而是你给予了什么。<br>重要的不是你有多么的成功，而是你生命的意义。<br>重要的不是你学到的，而是你传授给他人的。<br>重要的是你每一次正直、怜悯、勇敢和牺牲之行为能够使人充实、让人强大或是能够激励他人，让他们以你为榜样。<br>重要的不是你的能力，而是你的品格。<br>重要的不是你认识多少人，而是当你离开之后有多少人为此感到是一个损失。<br>重要的不是你的记忆，而是那些爱你的人能长久的记住你。<br>重要的是人们怀念你的时间有多长，被什么人怀念，因为什么而怀念你。<br>有意义的人生并非来自偶然。<br>这不是环境的问题，而是我们的选择问题。<br>选择过一种有意义的生活。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;无论你是否准备好，终有一天一切都会结束。&lt;br&gt;那时将不再有日出，不再有白昼，也不再有分秒的光阴。&lt;br&gt;所有你曾经拥有的，无论是珍藏的还是已经遗忘了的，都将成为他人之物。&lt;br&gt;财富、名誉以及世俗的权利将毫无用处。所拥有的和他人亏欠你的都不再重要。&lt;br&gt;所有的不满、愤恨
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>人际交往中的镜子效应</title>
@@ -61,86 +42,163 @@
   </entry>
   
   <entry>
-    <title>Ubuntu 上 MySQL 的那些事</title>
-    <link href="https://syxc.github.io/2014/08/06/technology/others/2013-04/about_ubuntu/"/>
-    <id>https://syxc.github.io/2014/08/06/technology/others/2013-04/about_ubuntu/</id>
-    <published>2014-08-06T06:02:51.000Z</published>
-    <updated>2016-09-04T10:21:37.000Z</updated>
+    <title>何为重要？</title>
+    <link href="https://syxc.github.io/2016/09/04/home/what_is_important/"/>
+    <id>https://syxc.github.io/2016/09/04/home/what_is_important/</id>
+    <published>2016-09-04T09:20:06.000Z</published>
+    <updated>2016-09-04T10:19:35.000Z</updated>
     
-    <content type="html"><![CDATA[<blockquote>
-<p>在利用 SQL 脚本导入数据的时候记住了：先检查有没有创建数据库的语句，若没有，则先手动把数据库给创建了，不然，就有可能悲剧了！举个例子：MySQL 的 mysql 库里面有个 user 表，这个大家都懂的，若你要导入的数据库刚好也有一个 user 表，假设你在用 GUI 工具导入数据之前选择的数据库刚好是 mysql… 太巧了吧！！！然后悲剧就发生了，你的 MySQL 就别想再连上去了！重装吧，恢复 mysql 库吧，随便怎么办吧，反正就是蛋疼了，最好你的数据不多，最好你之前是有过备份的！</p>
+    <content type="html"><![CDATA[<p>无论你是否准备好，终有一天一切都会结束。<br>那时将不再有日出，不再有白昼，也不再有分秒的光阴。<br>所有你曾经拥有的，无论是珍藏的还是已经遗忘了的，都将成为他人之物。<br>财富、名誉以及世俗的权利将毫无用处。所拥有的和他人亏欠你的都不再重要。<br>所有的不满、愤恨、挫折以及嫉妒终将烟消云散。<br>同样，所有的希望、雄心、计划以及未尽之事也将终止。曾经看重的成败得失也将淡去。<br>你从哪里来，曾经生活的方式也将不再重要。<br>是否漂亮，是否优秀，这些也不再有任何的关系。你的性别、肤色以及种族也无所谓了。<br>那究竟什么是重要的？我们有生之年的价值又用什么来衡量？<br>重要的不是你买了什么，而是你创造了什么，不是你得到了什么，而是你给予了什么。<br>重要的不是你有多么的成功，而是你生命的意义。<br>重要的不是你学到的，而是你传授给他人的。<br>重要的是你每一次正直、怜悯、勇敢和牺牲之行为能够使人充实、让人强大或是能够激励他人，让他们以你为榜样。<br>重要的不是你的能力，而是你的品格。<br>重要的不是你认识多少人，而是当你离开之后有多少人为此感到是一个损失。<br>重要的不是你的记忆，而是那些爱你的人能长久的记住你。<br>重要的是人们怀念你的时间有多长，被什么人怀念，因为什么而怀念你。<br>有意义的人生并非来自偶然。<br>这不是环境的问题，而是我们的选择问题。<br>选择过一种有意义的生活。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;无论你是否准备好，终有一天一切都会结束。&lt;br&gt;那时将不再有日出，不再有白昼，也不再有分秒的光阴。&lt;br&gt;所有你曾经拥有的，无论是珍藏的还是已经遗忘了的，都将成为他人之物。&lt;br&gt;财富、名誉以及世俗的权利将毫无用处。所拥有的和他人亏欠你的都不再重要。&lt;br&gt;所有的不满、愤恨
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于 Android 开发中经典的 65536 问题的一些总结</title>
+    <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/"/>
+    <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/</id>
+    <published>2014-12-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:15:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="65536-问题-解决方案"><a href="#65536-问题-解决方案" class="headerlink" title="65536 问题/解决方案"></a>65536 问题/解决方案</h2><p>Android 开发中，经典的 65536 问题不少人应该都碰到过，也就是这个：</p>
+<p><code>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</code></p>
+<p>对于这个问题的原因，这里我借用<a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">这篇文章</a>的一段话概括下，感谢文章作者的总结。</p>
+<blockquote>
+<p>这个错误是 Android 应用的方法总数限制造成的。Android 平台的 Java 虚拟机 Dalvik 在执行 DEX 格式的 Java 应用程序时，使用原生类型 short 来索引 DEX 文件中的方法。这意味着单个 DEX 文件可被引用的方法总数被限制为 65536。通常 APK 包含一个 classes.dex 文件，因此 Android 应用的方法总数不能超过这个数量，这包括 Android 框架、类库和你自己开发的代码。</p>
 </blockquote>
-<p>完全卸载 MySQL</p>
-<p><code>sudo apt-get autoremove --purge mysql-server-5.5 mysql-common</code></p>
-<p>重装 MySQL</p>
-<p><code>sudo apt-get install mysql-server-5.5 mysql-client-5.5 php5-mysql</code></p>
-<p>ps：记得删除 mysql 那个库，不然你重新安装的时候可能会提示设置密码错误的问题！它在这：</p>
-<p><code>/var/lib/mysql/</code></p>
-<p>下面记录一下我在重装 MySQL 的时候发生的一些情况    </p>
-<p>debconf: DbDriver “config”: mkdir :没有那个文件或目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Setting up man-db (2.5.7-8) ...</div><div class="line">debconf: DbDriver &quot;config&quot;: could not open /var/cache/debconf/config.dat</div><div class="line">dpkg: error processing man-db (--configure):</div><div class="line">subprocess installed post-installation script returned error exit status 1</div></pre></td></tr></table></figure>
-<p>A web search quickly revealed the solution:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /var/cache/debconf</div><div class="line">sudo apt-get install debconf --reinstall</div></pre></td></tr></table></figure>
+<p>原因了解了，如何解决，这里我简单汇总一些方案：</p>
+<h3 id="Google-官方的-MultiDex-方案"><a href="#Google-官方的-MultiDex-方案" class="headerlink" title="Google 官方的 MultiDex 方案"></a>Google 官方的 MultiDex 方案</h3><p><a href="https://developer.android.com/studio/build/multidex.html" target="_blank" rel="external">Configure Apps with Over 64K Methods</a></p>
+<h3 id="美团的多-Dex-分包、动态异步加载方案"><a href="#美团的多-Dex-分包、动态异步加载方案" class="headerlink" title="美团的多 Dex 分包、动态异步加载方案"></a>美团的多 Dex 分包、动态异步加载方案</h3><p><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></p>
+<h3 id="插件化，动态加载方案"><a href="#插件化，动态加载方案" class="headerlink" title="插件化，动态加载方案"></a>插件化，动态加载方案</h3><ul>
+<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">DynamicLoadApk</a></li>
+<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
+<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
+<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
+<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
+</ul>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>Hack Dalvik VM 解决 Android 2.3 DEX/LinearAllocHdr 超限</p>
+<ul>
+<li><a href="http://viila.info/2014/04/android-2-3-dex-max-function-problem/" target="_blank" rel="external">http://viila.info/2014/04/android-2-3-dex-max-function-problem/</a></li>
+<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">https://github.com/viilaismonster/LinearAllocFix</a></li>
+</ul>
+<h2 id="一些经验"><a href="#一些经验" class="headerlink" title="一些经验"></a>一些经验</h2><blockquote>
+<p>要预防 65536 问题，其实可以理解为就是如何尽可能的控制目标 method 数。</p>
+</blockquote>
+<p>关于第三方库的选择(尽量用小而美的工具包来辅助开发)</p>
+<ul>
+<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 左右；</li>
+<li>不建议使用 Guava 这个工具包，method 总数在 1w 以上，可以考虑用 Apache 的 commons 相关工具包代替，另外，<a href="https://github.com/oblac/jodd" target="_blank" rel="external">Jodd</a> 也是不错的选择； </li>
+<li>如果 App 有用到 Google Protobuf，那么推荐用 Square 的 Wire；</li>
+<li>相同功能的第三方库，选择其中一个合适的即可，如上面说的 JSON 相关的，还有图片加载、网络库等；</li>
+<li>如果可以，尝试用合适的方式抽取一些类库中需要的那部分代码来辅助开发；</li>
+<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a> 是个好工具，还有 <a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
+</ul>
+<p>总之，慎用第三方库。</p>
+<p>另外，再推荐一篇文章，<a href="https://ingramchen.io/blog/2014/09/prevention-of-android-dex-64k-method-size-limit.html" target="_blank" rel="external">預防 Android Dex 64k Method Size Limit</a></p>
+<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>当遇到问题时，我习惯这样来思考：</p>
+<ul>
+<li>问题出现的原因是什么？<ul>
+<li>低级错误，粗心大意造成？</li>
+<li>对某些原理(API)不了解？</li>
+<li>确实是某(些)疑难杂症？</li>
+</ul>
+</li>
+<li>如何解决？<ul>
+<li>Review, Review, Review</li>
+<li>查文档，找相关资料</li>
+<li>善用 Google 找解决方案(大部分问题都是有靠谱的方案的)</li>
+</ul>
+</li>
+</ul>
+<p>概括来说就是：</p>
+<blockquote>
+<p>发现问题 - 分析问题 - 解决问题 - 总结经验(教训)</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<li><a href="http://android-developers.blogspot.hk/2011/07/custom-class-loading-in-dalvik.html" target="_blank" rel="external">Android 打包多个 dex 并运行时动态加载类</a></li>
+<li><a href="http://www.trinea.cn/android/android-plugin/" target="_blank" rel="external">Android 插件化，动态升级</a></li>
+<li><a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">Android应用打破65K方法数限制</a></li>
+<li><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></li>
+<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">Hack Dalvik VM解决Android 2.3 DEX/LinearAllocHdr超限</a></li>
+<li><a href="https://github.com/mmin18/Dex65536" target="_blank" rel="external">Dex65536</a></li>
+<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">dynamic-load-apk</a></li>
+<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
+<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
+<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
+<li><a href="https://github.com/CtripMobile/DynamicAPK" target="_blank" rel="external">DynamicAPK</a></li>
+<li><a href="https://github.com/jasonross/Nuwa" target="_blank" rel="external">Nuwa</a></li>
+<li><a href="https://github.com/alibaba/AndFix" target="_blank" rel="external">AndFix</a></li>
+<li><a href="https://github.com/wequick/Small" target="_blank" rel="external">Small</a></li>
+<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
+<li><a href="http://mp.weixin.qq.com/s?spm=a1z2e.7794127.0.0.Q7LExa&amp;__biz=MzAwNDY1ODY2OQ==&amp;mid=2649286306&amp;idx=1&amp;sn=d6b2865e033a99de60b2d4314c6e0a25&amp;scene=0&amp;__nc=1#wechat_redirect" target="_blank" rel="external">微信Android热补丁实践演进之路</a></li>
+<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a></li>
+<li><a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt;在利用 SQL 脚本导入数据的时候记住了：先检查有没有创建数据库的语句，若没有，则先手动把数据库给创建了，不然，就有可能悲剧了！举个例子：MySQL 的 mysql 库里面有个 user 表，这个大家都懂的，若你要导入的数据库刚好也有一个 user
+      &lt;h2 id=&quot;65536-问题-解决方案&quot;&gt;&lt;a href=&quot;#65536-问题-解决方案&quot; class=&quot;headerlink&quot; title=&quot;65536 问题/解决方案&quot;&gt;&lt;/a&gt;65536 问题/解决方案&lt;/h2&gt;&lt;p&gt;Android 开发中，经典的 65536 问题不少
     
     </summary>
     
+    
+      <category term="Android" scheme="https://syxc.github.io/tags/Android/"/>
+    
+      <category term="65536" scheme="https://syxc.github.io/tags/65536/"/>
     
   </entry>
   
   <entry>
-    <title>ML-10.8 改 Safari 字型設定更美觀</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2013-06/custom_safari/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:21:59.000Z</updated>
+    <title>在 OSX 上面安装 Jenkins</title>
+    <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/"/>
+    <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/</id>
+    <published>2014-12-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:16:26.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="safari-font-css"><a href="#safari-font-css" class="headerlink" title="safari-font.css"></a>safari-font.css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  zoom: 100%;</div><div class="line">&#125;</div><div class="line"></div><div class="line">* &#123;</div><div class="line">  font-family: &quot;Helvetica&quot; !important;	</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 针对Github字体问题 */</div><div class="line">.octicon, .mega-octicon &#123;</div><div class="line">  font-family: &quot;github-octicons&quot; !important;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>via <a href="http://iphone4.tw/forums/showthread.php?t=187335" target="_blank" rel="external">http://iphone4.tw/forums/showthread.php?t=187335</a></p>
+    <content type="html"><![CDATA[<p>Starting/stopping the service</p>
+<ul>
+<li>To manually start the daemon:<br><code>sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+<li>To manually stop the daemon:<br><code>sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+</ul>
+<p><strong>How to uninstall Jenkins?</strong></p>
+<p><a href="http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins" target="_blank" rel="external">http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins</a></p>
+<p>There instructions apply if you installed using the official Jenkins Mac installer from <a href="http://jenkins-ci.org" target="_blank" rel="external">http://jenkins-ci.org</a></p>
+<p>Execute from terminal</p>
+<p><code>/Library/Application Support/Jenkins/Uninstall.command</code></p>
+<p>If the uninstallation script cannot be found, use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm -rf /Applications/Jenkins &quot;/Library/Application Support/Jenkins&quot; /Library/Documentation/Jenkins</div></pre></td></tr></table></figure></p>
+<p>and if you want to get rid of all the jobs and builds:</p>
+<p><code>sudo rm -rf /Users/Shared/Jenkins</code></p>
+<p>and to delete the jenkins user and group (if you chose to use them):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dscl . -delete /Users/jenkins</div><div class="line">sudo dscl . -delete /Groups/jenkins</div></pre></td></tr></table></figure></p>
+<p>I think that should cover it. Maybe that could be included with the Jenkins installer… But how would people find it? There is no standard place for uninstallers on Mac.</p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;safari-font-css&quot;&gt;&lt;a href=&quot;#safari-font-css&quot; class=&quot;headerlink&quot; title=&quot;safari-font.css&quot;&gt;&lt;/a&gt;safari-font.css&lt;/h2&gt;&lt;figure class=&quot;highli
+      &lt;p&gt;Starting/stopping the service&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To manually start the daemon:&lt;br&gt;&lt;code&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-
     
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>在终端配置 Ubuntu 的 IP/DNS</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2012-08/ubuntu_ip_dns/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:21:48.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="启动终端，打开配置文件"><a href="#启动终端，打开配置文件" class="headerlink" title="启动终端，打开配置文件"></a>启动终端，打开配置文件</h2><p><code>sudo cp /etc/network/interfaces  /etc/network/interfacesbak  # 备份原有配置文件</code><br><code>sudo vim /etc/network/interfaces  # 编辑网卡配置文件</code></p>
-<h2 id="接着修改相应内容，例如"><a href="#接着修改相应内容，例如" class="headerlink" title="接着修改相应内容，例如"></a>接着修改相应内容，例如</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">auto eth0</div><div class="line">iface eth0 inet static  # static 固定ip，dhcp 动态ip</div><div class="line">address 192.168.1.88</div><div class="line">netmask 255.255.255.0</div><div class="line">gateway 192.168.1.1</div><div class="line"></div><div class="line">echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf  # 写入DNS服务器信息至resolv.conf</div></pre></td></tr></table></figure>
-<h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><p><code>/etc/init.d/networking restart  # 重启网络</code></p>
-<p>这样，IP、DNS 就算配置好了！</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;启动终端，打开配置文件&quot;&gt;&lt;a href=&quot;#启动终端，打开配置文件&quot; class=&quot;headerlink&quot; title=&quot;启动终端，打开配置文件&quot;&gt;&lt;/a&gt;启动终端，打开配置文件&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo cp /etc/network/interfa
-    
-    </summary>
-    
+      <category term="Jenkins" scheme="https://syxc.github.io/tags/Jenkins/"/>
     
   </entry>
   
   <entry>
     <title>How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2014-08/compress_extract/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:22:09.000Z</updated>
+    <link href="https://syxc.github.io/2014/08/01/technology/others/2014-08/compress_extract/"/>
+    <id>https://syxc.github.io/2014/08/01/technology/others/2014-08/compress_extract/</id>
+    <published>2014-08-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:17:22.000Z</updated>
     
     <content type="html"><![CDATA[<p><strong>ZIP – Cross Platform</strong></p>
 <p>First up is ZIP one of the most commonly used compression techniques used across all platforms</p>
@@ -184,14 +242,105 @@
     </summary>
     
     
+      <category term="Ubuntu" scheme="https://syxc.github.io/tags/Ubuntu/"/>
+    
+      <category term="macOS" scheme="https://syxc.github.io/tags/macOS/"/>
+    
+      <category term="Shell" scheme="https://syxc.github.io/tags/Shell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ML-10.8 改 Safari 字型設定更美觀</title>
+    <link href="https://syxc.github.io/2013/06/01/technology/others/2013-06/custom_safari/"/>
+    <id>https://syxc.github.io/2013/06/01/technology/others/2013-06/custom_safari/</id>
+    <published>2013-06-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:18:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="safari-font-css"><a href="#safari-font-css" class="headerlink" title="safari-font.css"></a>safari-font.css</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  zoom: 100%;</div><div class="line">&#125;</div><div class="line"></div><div class="line">* &#123;</div><div class="line">  font-family: &quot;Helvetica&quot; !important;	</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* 针对Github字体问题 */</div><div class="line">.octicon, .mega-octicon &#123;</div><div class="line">  font-family: &quot;github-octicons&quot; !important;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>via <a href="http://iphone4.tw/forums/showthread.php?t=187335" target="_blank" rel="external">http://iphone4.tw/forums/showthread.php?t=187335</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;safari-font-css&quot;&gt;&lt;a href=&quot;#safari-font-css&quot; class=&quot;headerlink&quot; title=&quot;safari-font.css&quot;&gt;&lt;/a&gt;safari-font.css&lt;/h2&gt;&lt;figure class=&quot;highli
+    
+    </summary>
+    
+    
+      <category term="macOS" scheme="https://syxc.github.io/tags/macOS/"/>
+    
+      <category term="Safari" scheme="https://syxc.github.io/tags/Safari/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 上 MySQL 的那些事</title>
+    <link href="https://syxc.github.io/2013/04/01/technology/others/2013-04/about_ubuntu/"/>
+    <id>https://syxc.github.io/2013/04/01/technology/others/2013-04/about_ubuntu/</id>
+    <published>2013-04-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:18:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>在利用 SQL 脚本导入数据的时候记住了：先检查有没有创建数据库的语句，若没有，则先手动把数据库给创建了，不然，就有可能悲剧了！举个例子：MySQL 的 mysql 库里面有个 user 表，这个大家都懂的，若你要导入的数据库刚好也有一个 user 表，假设你在用 GUI 工具导入数据之前选择的数据库刚好是 mysql… 太巧了吧！！！然后悲剧就发生了，你的 MySQL 就别想再连上去了！重装吧，恢复 mysql 库吧，随便怎么办吧，反正就是蛋疼了，最好你的数据不多，最好你之前是有过备份的！</p>
+</blockquote>
+<p>完全卸载 MySQL</p>
+<p><code>sudo apt-get autoremove --purge mysql-server-5.5 mysql-common</code></p>
+<p>重装 MySQL</p>
+<p><code>sudo apt-get install mysql-server-5.5 mysql-client-5.5 php5-mysql</code></p>
+<p>ps：记得删除 mysql 那个库，不然你重新安装的时候可能会提示设置密码错误的问题！它在这：</p>
+<p><code>/var/lib/mysql/</code></p>
+<p>下面记录一下我在重装 MySQL 的时候发生的一些情况    </p>
+<p>debconf: DbDriver “config”: mkdir :没有那个文件或目录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Setting up man-db (2.5.7-8) ...</div><div class="line">debconf: DbDriver &quot;config&quot;: could not open /var/cache/debconf/config.dat</div><div class="line">dpkg: error processing man-db (--configure):</div><div class="line">subprocess installed post-installation script returned error exit status 1</div></pre></td></tr></table></figure>
+<p>A web search quickly revealed the solution:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mkdir /var/cache/debconf</div><div class="line">sudo apt-get install debconf --reinstall</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在利用 SQL 脚本导入数据的时候记住了：先检查有没有创建数据库的语句，若没有，则先手动把数据库给创建了，不然，就有可能悲剧了！举个例子：MySQL 的 mysql 库里面有个 user 表，这个大家都懂的，若你要导入的数据库刚好也有一个 user
+    
+    </summary>
+    
+    
+      <category term="Ubuntu" scheme="https://syxc.github.io/tags/Ubuntu/"/>
+    
+      <category term="MySQL" scheme="https://syxc.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在终端配置 Ubuntu 的 IP/DNS</title>
+    <link href="https://syxc.github.io/2012/08/01/technology/others/2012-08/ubuntu_ip_dns/"/>
+    <id>https://syxc.github.io/2012/08/01/technology/others/2012-08/ubuntu_ip_dns/</id>
+    <published>2012-08-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:18:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="启动终端，打开配置文件"><a href="#启动终端，打开配置文件" class="headerlink" title="启动终端，打开配置文件"></a>启动终端，打开配置文件</h2><p><code>sudo cp /etc/network/interfaces  /etc/network/interfacesbak  # 备份原有配置文件</code><br><code>sudo vim /etc/network/interfaces  # 编辑网卡配置文件</code></p>
+<h2 id="接着修改相应内容，例如"><a href="#接着修改相应内容，例如" class="headerlink" title="接着修改相应内容，例如"></a>接着修改相应内容，例如</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">auto eth0</div><div class="line">iface eth0 inet static  # static 固定ip，dhcp 动态ip</div><div class="line">address 192.168.1.88</div><div class="line">netmask 255.255.255.0</div><div class="line">gateway 192.168.1.1</div><div class="line"></div><div class="line">echo &quot;nameserver 8.8.8.8&quot; &gt; /etc/resolv.conf  # 写入DNS服务器信息至resolv.conf</div></pre></td></tr></table></figure>
+<h2 id="重启网络"><a href="#重启网络" class="headerlink" title="重启网络"></a>重启网络</h2><p><code>/etc/init.d/networking restart  # 重启网络</code></p>
+<p>这样，IP、DNS 就算配置好了！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;启动终端，打开配置文件&quot;&gt;&lt;a href=&quot;#启动终端，打开配置文件&quot; class=&quot;headerlink&quot; title=&quot;启动终端，打开配置文件&quot;&gt;&lt;/a&gt;启动终端，打开配置文件&lt;/h2&gt;&lt;p&gt;&lt;code&gt;sudo cp /etc/network/interfa
+    
+    </summary>
+    
+    
+      <category term="Ubuntu" scheme="https://syxc.github.io/tags/Ubuntu/"/>
+    
   </entry>
   
   <entry>
     <title>使用 Gitolite 搭建 Git 服务器</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2012-06/gitolite/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2012-06/gitolite/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:22:47.000Z</updated>
+    <link href="https://syxc.github.io/2012/06/01/technology/others/2012-06/gitolite/"/>
+    <id>https://syxc.github.io/2012/06/01/technology/others/2012-06/gitolite/</id>
+    <published>2012-06-01T00:00:00.000Z</published>
+    <updated>2016-09-05T04:19:27.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="需要用到的软件"><a href="#需要用到的软件" class="headerlink" title="需要用到的软件"></a>需要用到的软件</h2><ul>
 <li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
@@ -279,132 +428,9 @@
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>在 OSX 上面安装 Jenkins</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2014-12/jenkins/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2014-12/jenkins/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T10:22:30.000Z</updated>
+      <category term="Ubuntu" scheme="https://syxc.github.io/tags/Ubuntu/"/>
     
-    <content type="html"><![CDATA[<p>Starting/stopping the service</p>
-<ul>
-<li>To manually start the daemon:<br><code>sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
-<li>To manually stop the daemon:<br><code>sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
-</ul>
-<p><strong>How to uninstall Jenkins?</strong></p>
-<p><a href="http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins" target="_blank" rel="external">http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins</a></p>
-<p>There instructions apply if you installed using the official Jenkins Mac installer from <a href="http://jenkins-ci.org" target="_blank" rel="external">http://jenkins-ci.org</a></p>
-<p>Execute from terminal</p>
-<p><code>/Library/Application Support/Jenkins/Uninstall.command</code></p>
-<p>If the uninstallation script cannot be found, use:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm -rf /Applications/Jenkins &quot;/Library/Application Support/Jenkins&quot; /Library/Documentation/Jenkins</div></pre></td></tr></table></figure></p>
-<p>and if you want to get rid of all the jobs and builds:</p>
-<p><code>sudo rm -rf /Users/Shared/Jenkins</code></p>
-<p>and to delete the jenkins user and group (if you chose to use them):<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dscl . -delete /Users/jenkins</div><div class="line">sudo dscl . -delete /Groups/jenkins</div></pre></td></tr></table></figure></p>
-<p>I think that should cover it. Maybe that could be included with the Jenkins installer… But how would people find it? There is no standard place for uninstallers on Mac.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Starting/stopping the service&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;To manually start the daemon:&lt;br&gt;&lt;code&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于 Android 开发中经典的 65536 问题的一些总结</title>
-    <link href="https://syxc.github.io/2013/11/08/technology/others/2014-12/android_65536/"/>
-    <id>https://syxc.github.io/2013/11/08/technology/others/2014-12/android_65536/</id>
-    <published>2013-11-08T08:25:28.000Z</published>
-    <updated>2016-09-04T18:11:14.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="65536-问题-解决方案"><a href="#65536-问题-解决方案" class="headerlink" title="65536 问题/解决方案"></a>65536 问题/解决方案</h2><p>Android 开发中，经典的 65536 问题不少人应该都碰到过，也就是这个：</p>
-<p><code>Conversion to Dalvik format failed: Unable to execute dex: method ID not in [0, 0xffff]: 65536</code></p>
-<p>对于这个问题的原因，这里我借用<a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">这篇文章</a>的一段话概括下，感谢文章作者的总结。</p>
-<blockquote>
-<p>这个错误是 Android 应用的方法总数限制造成的。Android 平台的 Java 虚拟机 Dalvik 在执行 DEX 格式的 Java 应用程序时，使用原生类型 short 来索引 DEX 文件中的方法。这意味着单个 DEX 文件可被引用的方法总数被限制为 65536。通常 APK 包含一个 classes.dex 文件，因此 Android 应用的方法总数不能超过这个数量，这包括 Android 框架、类库和你自己开发的代码。</p>
-</blockquote>
-<p>原因了解了，如何解决，这里我简单汇总一些方案：</p>
-<h3 id="Google-官方的-MultiDex-方案"><a href="#Google-官方的-MultiDex-方案" class="headerlink" title="Google 官方的 MultiDex 方案"></a>Google 官方的 MultiDex 方案</h3><p><a href="https://developer.android.com/studio/build/multidex.html" target="_blank" rel="external">Configure Apps with Over 64K Methods</a></p>
-<h3 id="美团的多-Dex-分包、动态异步加载方案"><a href="#美团的多-Dex-分包、动态异步加载方案" class="headerlink" title="美团的多 Dex 分包、动态异步加载方案"></a>美团的多 Dex 分包、动态异步加载方案</h3><p><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></p>
-<h3 id="插件化，动态加载方案"><a href="#插件化，动态加载方案" class="headerlink" title="插件化，动态加载方案"></a>插件化，动态加载方案</h3><ul>
-<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">DynamicLoadApk</a></li>
-<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
-<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
-<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
-<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
-</ul>
-<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>Hack Dalvik VM 解决 Android 2.3 DEX/LinearAllocHdr 超限</p>
-<ul>
-<li><a href="http://viila.info/2014/04/android-2-3-dex-max-function-problem/" target="_blank" rel="external">http://viila.info/2014/04/android-2-3-dex-max-function-problem/</a></li>
-<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">https://github.com/viilaismonster/LinearAllocFix</a></li>
-</ul>
-<h2 id="一些经验"><a href="#一些经验" class="headerlink" title="一些经验"></a>一些经验</h2><blockquote>
-<p>要预防 65536 问题，其实可以理解为就是如何尽可能的控制目标 method 数。</p>
-</blockquote>
-<p>关于第三方库的选择(尽量用小而美的工具包来辅助开发)</p>
-<ul>
-<li>JSON 类库的选择，在 Jackson, Gson, Fastjson 中，综合来说，Gson 比较均衡，method 总数在 1k 左右；</li>
-<li>不建议使用 Guava 这个工具包，method 总数在 1w 以上，可以考虑用 Apache 的 commons 相关工具包代替，另外，<a href="https://github.com/oblac/jodd" target="_blank" rel="external">Jodd</a> 也是不错的选择； </li>
-<li>如果 App 有用到 Google Protobuf，那么推荐用 Square 的 Wire；</li>
-<li>相同功能的第三方库，选择其中一个合适的即可，如上面说的 JSON 相关的，还有图片加载、网络库等；</li>
-<li>如果可以，尝试用合适的方式抽取一些类库中需要的那部分代码来辅助开发；</li>
-<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a> 是个好工具，还有 <a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
-</ul>
-<p>总之，慎用第三方库。</p>
-<p>另外，再推荐一篇文章，<a href="https://ingramchen.io/blog/2014/09/prevention-of-android-dex-64k-method-size-limit.html" target="_blank" rel="external">預防 Android Dex 64k Method Size Limit</a></p>
-<h2 id="题外话"><a href="#题外话" class="headerlink" title="题外话"></a>题外话</h2><p>当遇到问题时，我习惯这样来思考：</p>
-<ul>
-<li>问题出现的原因是什么？<ul>
-<li>低级错误，粗心大意造成？</li>
-<li>对某些原理(API)不了解？</li>
-<li>确实是某(些)疑难杂症？</li>
-</ul>
-</li>
-<li>如何解决？<ul>
-<li>Review, Review, Review</li>
-<li>查文档，找相关资料</li>
-<li>善用 Google 找解决方案(大部分问题都是有靠谱的方案的)</li>
-</ul>
-</li>
-</ul>
-<p>概括来说就是：</p>
-<blockquote>
-<p>发现问题 - 分析问题 - 解决问题 - 总结经验(教训)</p>
-</blockquote>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="http://android-developers.blogspot.hk/2011/07/custom-class-loading-in-dalvik.html" target="_blank" rel="external">Android 打包多个 dex 并运行时动态加载类</a></li>
-<li><a href="http://www.trinea.cn/android/android-plugin/" target="_blank" rel="external">Android 插件化，动态升级</a></li>
-<li><a href="http://www.infoq.com/cn/news/2014/11/android-multidex" target="_blank" rel="external">Android应用打破65K方法数限制</a></li>
-<li><a href="http://tech.meituan.com/mt-android-auto-split-dex.html" target="_blank" rel="external">美团Android DEX自动拆包及动态加载简介</a></li>
-<li><a href="https://github.com/viilaismonster/LinearAllocFix" target="_blank" rel="external">Hack Dalvik VM解决Android 2.3 DEX/LinearAllocHdr超限</a></li>
-<li><a href="https://github.com/mmin18/Dex65536" target="_blank" rel="external">Dex65536</a></li>
-<li><a href="https://github.com/singwhatiwanna/dynamic-load-apk" target="_blank" rel="external">dynamic-load-apk</a></li>
-<li><a href="https://github.com/mmin18/AndroidDynamicLoader" target="_blank" rel="external">AndroidDynamicLoader</a></li>
-<li><a href="https://github.com/houkx/android-pluginmgr" target="_blank" rel="external">android-pluginmgr</a></li>
-<li><a href="https://github.com/DroidPluginTeam/DroidPlugin" target="_blank" rel="external">DroidPlugin</a></li>
-<li><a href="https://github.com/CtripMobile/DynamicAPK" target="_blank" rel="external">DynamicAPK</a></li>
-<li><a href="https://github.com/jasonross/Nuwa" target="_blank" rel="external">Nuwa</a></li>
-<li><a href="https://github.com/alibaba/AndFix" target="_blank" rel="external">AndFix</a></li>
-<li><a href="https://github.com/wequick/Small" target="_blank" rel="external">Small</a></li>
-<li><a href="https://github.com/bunnyblue/DroidFix" target="_blank" rel="external">DroidFix</a></li>
-<li><a href="http://mp.weixin.qq.com/s?spm=a1z2e.7794127.0.0.Q7LExa&amp;__biz=MzAwNDY1ODY2OQ==&amp;mid=2649286306&amp;idx=1&amp;sn=d6b2865e033a99de60b2d4314c6e0a25&amp;scene=0&amp;__nc=1#wechat_redirect" target="_blank" rel="external">微信Android热补丁实践演进之路</a></li>
-<li><a href="https://github.com/mihaip/dex-method-counts" target="_blank" rel="external">dex-method-counts</a></li>
-<li><a href="http://www.methodscount.com/" target="_blank" rel="external">http://www.methodscount.com</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;65536-问题-解决方案&quot;&gt;&lt;a href=&quot;#65536-问题-解决方案&quot; class=&quot;headerlink&quot; title=&quot;65536 问题/解决方案&quot;&gt;&lt;/a&gt;65536 问题/解决方案&lt;/h2&gt;&lt;p&gt;Android 开发中，经典的 65536 问题不少
-    
-    </summary>
-    
+      <category term="Git" scheme="https://syxc.github.io/tags/Git/"/>
     
   </entry>
   

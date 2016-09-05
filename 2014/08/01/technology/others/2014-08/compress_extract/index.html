@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en_US"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal · syxc</title><meta name="description" content="How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal - syxc"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="https://syxc.github.io/atom.xml" title="syxc"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/syxc" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/syxc" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal</h1><div class="post-info">Aug 1, 2014</div><div class="post-content"><p><strong>ZIP – Cross Platform</strong></p>
+<p>First up is ZIP one of the most commonly used compression techniques used across all platforms</p>
+<p>To compress</p>
+<p><code>zip -r archive_name.zip folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>unzip archive_name.zip</code></p>
+<p>If you want to make a zip without those invisible Mac resource files such as “_MACOSX” or “._Filename” and .ds store files, use the “-X” option in the command so:</p>
+<p><code>zip -r -X archive_name.zip folder_to_compress</code></p>
+<p><strong>TAR.GZ – Cross Platform</strong>    </p>
+<p>Second up is TAR, an old favourite on Unix/Linux – you add the GZ for the compression – compresses tighter than zip</p>
+<p>To compress</p>
+<p><code>tar -zcvf archive_name.tar.gz folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>tar -zxvf archive_name.tar.gz</code></p>
+<p><strong>TAR.BZ2 – Cross Platform</strong></p>
+<p>A variation on TAR GZ but with better compression than both tar.gz and zip.</p>
+<p>To compress</p>
+<p><code>tar -jcvf archive_name.tar.bz2 folder_to_compress</code></p>
+<p>To extract</p>
+<p><code>tar -jxvf archive_name.tar.bz2</code></p>
+<p><strong>DMG – OSX Only</strong></p>
+<p>This one is Mac OSX native only – for a GUI interface use /Applications/Utilities/Disk Utility – for command line use:</p>
+<p>To create</p>
+<p><code>hdiutil create -format UDZO -srcfolder folder_to_compress archive_name.dmg</code></p>
+<p>To mount</p>
+<p><code>hdiutil attach archive_name.dmg</code></p>
+<p>To view</p>
+<p><code>ls -lah /Volumes/archive_name/</code></p>
+<p>To Eject</p>
+<p><code>hdiutil eject /Volumes/archive_name/</code></p>
+<p>You can also use a number of different formats for creating a .dmg</p>
+<p>via <a href="http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/" target="_blank" rel="external">http://coolestguidesontheplanet.com/how-to-compress-and-uncompress-files-and-folders-in-os-x-lion-10-7-using-terminal/</a>                                        </p>
+</div></article></div></section><footer><div class="paginator"><a href="/2014/12/01/technology/others/2014-12/jenkins/" class="prev">PREV</a><a href="/2013/06/01/technology/others/2013-06/custom_safari/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
+var disqus_identifier = '2014/08/01/technology/others/2014-08/compress_extract/';
+var disqus_title = 'How to compress and uncompress files and folders in OSX 10.9 Mavericks using Terminal';
+var disqus_url = 'https://syxc.github.io/2014/08/01/technology/others/2014-08/compress_extract/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//syxc.disqus.com/count.js" async></script><div class="copyright"><p>© 2015 - 2016 <a href="https://syxc.github.io">syxc</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-74437073-1",'auto');ga('send','pageview');</script></body></html>
