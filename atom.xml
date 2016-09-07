@@ -61,6 +61,43 @@
   </entry>
   
   <entry>
+    <title>在 OSX 上面安装 Jenkins</title>
+    <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/"/>
+    <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/</id>
+    <published>2014-12-01T00:00:00.000Z</published>
+    <updated>2016-09-05T06:45:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Starting/stopping the service</p>
+<ul>
+<li>To manually start the daemon:<br><code>sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+<li>To manually stop the daemon:<br><code>sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
+</ul>
+<p><strong>How to uninstall Jenkins?</strong></p>
+<p><a href="http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins" target="_blank" rel="external">http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins</a></p>
+<p>There instructions apply if you installed using the official Jenkins Mac installer from <a href="http://jenkins-ci.org" target="_blank" rel="external">http://jenkins-ci.org</a></p>
+<p>Execute from terminal</p>
+<p><code>/Library/Application Support/Jenkins/Uninstall.command</code></p>
+<p>If the uninstallation script cannot be found, use:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm -rf /Applications/Jenkins <span class="string">"/Library/Application Support/Jenkins"</span> /Library/Documentation/Jenkins</div></pre></td></tr></table></figure></p>
+<p>and if you want to get rid of all the jobs and builds:</p>
+<p><code>sudo rm -rf /Users/Shared/Jenkins</code></p>
+<p>and to delete the jenkins user and group (if you chose to use them):<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dscl . -delete /Users/jenkins</div><div class="line">sudo dscl . -delete /Groups/jenkins</div></pre></td></tr></table></figure></p>
+<p>I think that should cover it. Maybe that could be included with the Jenkins installer… But how would people find it? There is no standard place for uninstallers on Mac.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Starting/stopping the service&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To manually start the daemon:&lt;br&gt;&lt;code&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-
+    
+    </summary>
+    
+    
+      <category term="Jenkins" scheme="https://syxc.github.io/tags/Jenkins/"/>
+    
+  </entry>
+  
+  <entry>
     <title>关于 Android 开发中经典的 65536 问题的一些总结</title>
     <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/"/>
     <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/android_65536/</id>
@@ -153,43 +190,6 @@
       <category term="Android" scheme="https://syxc.github.io/tags/Android/"/>
     
       <category term="65536" scheme="https://syxc.github.io/tags/65536/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在 OSX 上面安装 Jenkins</title>
-    <link href="https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/"/>
-    <id>https://syxc.github.io/2014/12/01/technology/others/2014-12/jenkins/</id>
-    <published>2014-12-01T00:00:00.000Z</published>
-    <updated>2016-09-05T06:45:41.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Starting/stopping the service</p>
-<ul>
-<li>To manually start the daemon:<br><code>sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
-<li>To manually stop the daemon:<br><code>sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</code></li>
-</ul>
-<p><strong>How to uninstall Jenkins?</strong></p>
-<p><a href="http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins" target="_blank" rel="external">http://stackoverflow.com/questions/11608996/how-to-uninstall-jenkins</a></p>
-<p>There instructions apply if you installed using the official Jenkins Mac installer from <a href="http://jenkins-ci.org" target="_blank" rel="external">http://jenkins-ci.org</a></p>
-<p>Execute from terminal</p>
-<p><code>/Library/Application Support/Jenkins/Uninstall.command</code></p>
-<p>If the uninstallation script cannot be found, use:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist</div><div class="line">sudo rm -rf /Applications/Jenkins <span class="string">"/Library/Application Support/Jenkins"</span> /Library/Documentation/Jenkins</div></pre></td></tr></table></figure></p>
-<p>and if you want to get rid of all the jobs and builds:</p>
-<p><code>sudo rm -rf /Users/Shared/Jenkins</code></p>
-<p>and to delete the jenkins user and group (if you chose to use them):<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dscl . -delete /Users/jenkins</div><div class="line">sudo dscl . -delete /Groups/jenkins</div></pre></td></tr></table></figure></p>
-<p>I think that should cover it. Maybe that could be included with the Jenkins installer… But how would people find it? There is no standard place for uninstallers on Mac.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Starting/stopping the service&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;To manually start the daemon:&lt;br&gt;&lt;code&gt;sudo launchctl load /Library/LaunchDaemons/org.jenkins-
-    
-    </summary>
-    
-    
-      <category term="Jenkins" scheme="https://syxc.github.io/tags/Jenkins/"/>
     
   </entry>
   
