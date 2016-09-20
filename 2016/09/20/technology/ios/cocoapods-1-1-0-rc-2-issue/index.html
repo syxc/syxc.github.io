@@ -6,14 +6,22 @@
 <blockquote>
 <p>gem 源改成 <code>https://ruby.taobao.org/</code> 的优势是速度比 <code>https://rubygems.org/</code> 快，但是淘宝的源更新并没有官方及时，导致部分情况下不同步的问题，这个 Cocoapods 版本就是个案例。</p>
 </blockquote>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>把 gem 源改成官方的：</p>
+<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>把 gem 源改成官方的：</p>
 <p><code>gem sources --add https://rubygems.org/ --remove https://ruby.taobao.org/</code></p>
 <p>然后执行 <code>sudo gem install cocoapods --pre</code> 升级 Cocoapods 到最新的 1.1.0.rc.2 版本(截至目前是)，然后 <code>pod lib lint</code> 的问题就解决了。</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
+<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>macOS 10.12 (16A323)</li>
+<li>Xcode 8.0 (8A218a)</li>
+<li>Swift 2.3 &amp; 3.0</li>
+<li><p>pod env</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">   CocoaPods : 1.1.0.rc.2</div><div class="line">        Ruby : ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]</div><div class="line">    RubyGems : 2.6.6</div><div class="line">        Host : Mac OS X 10.12 (16A323)</div><div class="line">       Xcode : 8.0 (8A218a)</div><div class="line">         Git : git version 2.8.4 (Apple Git-73)</div><div class="line">Ruby lib dir : /usr/<span class="built_in">local</span>/Cellar/ruby/2.3.1/lib</div><div class="line">Repositories : master - https://github.com/CocoaPods/Specs.git @ 4c6b006e04df8bde3561a9517e7aa3997767fa50</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
 <li><a href="https://ruby.taobao.org/" target="_blank" rel="external">https://ruby.taobao.org/</a></li>
 <li><a href="https://github.com/CocoaPods/CocoaPods/issues/5843" target="_blank" rel="external">pod trunk push: “xcodebuild: error: ‘App.xcworkspace’ does not exist.”</a></li>
 </ul>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/09/04/home/what_is_important/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
+</div></article></div></section><footer><div class="paginator"><a href="/2016/09/04/psychology/jingzixiaoying/" class="next">NEXT</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'syxc';
 var disqus_identifier = '2016/09/20/technology/ios/cocoapods-1-1-0-rc-2-issue/';
 var disqus_title = '解决因 Cocoapods 版本原因导致的 pod trunk push 问题';
 var disqus_url = 'https://syxc.github.io/2016/09/20/technology/ios/cocoapods-1-1-0-rc-2-issue/';
