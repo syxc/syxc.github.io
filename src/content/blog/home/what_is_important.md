@@ -1,7 +1,6 @@
 ---
 # author: syxc
-pubDatetime: 2022-09-23T15:22:00+08:00
-modDatetime: 2023-12-21T17:12:00+08:00
+pubDatetime: 2012-08-23T15:22:00+08:00
 title: 何为重要？
 slug: what-is-important
 featured: false
