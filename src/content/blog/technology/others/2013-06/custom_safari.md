@@ -21,7 +21,7 @@ body {
   font-family: "Helvetica" !important;
 }
 
-/* 针对Github字体问题 */
+/* 针对 GitHub 字体问题 */
 .octicon,
 .mega-octicon {
   font-family: "github-octicons" !important;
