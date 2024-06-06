@@ -1,5 +1,4 @@
-// RandomQuoteGenerator.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./quote.css";
 
 interface Quote {
@@ -30,12 +29,12 @@ const quotes: Quote[] = [
   },
 ];
 
-const RandomQuoteGenerator: React.FC = () => {
+const RandomQuoteGenerator = () => {
   const [quote, setQuote] = useState<Quote>({ text: "", author: "" });
 
   useEffect(() => {
     generateRandomQuote();
-  }, []); // 空数组表示只在组件挂载时执行一次
+  }, []);
 
   const generateRandomQuote = () => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -44,13 +43,12 @@ const RandomQuoteGenerator: React.FC = () => {
 
   return (
     <>
-      {quote.text &&
-        quote.author && ( // 使用条件渲染
-          <div className="quote-container">
-            <p className="quote-text">{quote.text}</p>
-            <p className="quote-author">- {quote.author}</p>
-          </div>
-        )}
+      {quote.text && quote.author && (
+        <div className="quote-container">
+          <p className="quote-text">{quote.text}</p>
+          <p className="quote-author">- {quote.author}</p>
+        </div>
+      )}
     </>
   );
 };
