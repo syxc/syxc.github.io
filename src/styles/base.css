@@ -157,4 +157,5 @@ body {
 
 .prose a:hover {
   text-decoration: underline !important;
+  text-decoration-style: dashed !important;
 }
