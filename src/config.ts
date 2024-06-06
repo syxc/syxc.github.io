@@ -35,5 +35,5 @@ export const SOCIALS: SocialObjects = [
     href: "https://x.com/syxc",
     linkTitle: `${SITE.title} on Twitter`,
     active: true,
-  }
+  },
 ];

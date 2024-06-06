@@ -23,8 +23,8 @@ Frontmatter is the main place to store some important information about the blog
 
 Here is the list of frontmatter property for each post.
 
-| Property           | Description                                                                                 | Remark                                        |
-| ------------------ | ------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| Property         | Description                                                                                 | Remark                                        |
+| ---------------- | ------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | **title**        | Title of the post. (h1)                                                                     | required<sup>\*</sup>                         |
 | **description**  | Description of the post. Used in post excerpt and site description of the post.             | required<sup>\*</sup>                         |
 | **pubDatetime**  | Published datetime in ISO 8601 format.                                                      | required<sup>\*</sup>                         |

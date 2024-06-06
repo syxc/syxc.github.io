@@ -53,9 +53,8 @@ module.exports = {
         },
         transparent: "transparent",
       },
-      fontFamily: {
-        // ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace !important;        
-        mono: ["ui-monospace", "SFMono-Regular", "SF Mono", "Menlo", "Consolas", "Liberation Mono", "monospace"]
+      fontFamily: {                
+        mono: ["ui-monospace", "SFMono-Regular", "SF Mono", "Menlo", "Consolas", "Liberation Mono", "Courier New", "monospace"]
       },
 
       typography: {
