@@ -87,16 +87,26 @@
     },
   ];
 
+  interface Quote {
+    text: string;
+    author: string;
+  }
+
+  const quoteIndex: number = getRandomNumber(0, quotes.length - 1);
+  let quote: Quote | null = quotes[quoteIndex];
+
   function getRandomNumber(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  const quoteIndex: number = getRandomNumber(0, quotes.length - 1);
-  const quote = quotes[quoteIndex];
-
   function displayRandomQuote() {
-    document.getElementById("quote-text").textContent = `${quote.text}`;
-    document.getElementById("quote-author").textContent = `- ${quote.author}`;
+    const quoteTextElement = document.getElementById("quote-text");
+    const quoteAuthorElement = document.getElementById("quote-author");
+
+    if (quoteTextElement && quoteAuthorElement) {
+      quoteTextElement.textContent = `${quote?.text}`;
+      quoteAuthorElement.textContent = `- ${quote?.author}`;
+    }
   }
 
   window.addEventListener("DOMContentLoaded", function () {
