@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./quote.css";
+import styles from "./quote.module.css";
 
 interface Quote {
   text: string;
@@ -44,9 +44,9 @@ const RandomQuoteGenerator = () => {
   return (
     <>
       {quote.text && quote.author && (
-        <div className="quote-container">
-          <p className="quote-text">{quote.text}</p>
-          <p className="quote-author">- {quote.author}</p>
+        <div className={styles.container}>
+          <p className={styles.text}>{quote.text}</p>
+          <p className={styles.author}>- {quote.author}</p>
         </div>
       )}
     </>

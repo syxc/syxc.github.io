@@ -1,15 +1,14 @@
-.quote-container {
+.container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* position: relative; */
 }
 
-.quote-text {
+.text {
   font-size: 20px;
 }
 
-.quote-author {
+.author {
   align-self: flex-start;
   opacity: 0.8;
   padding: 5px 5px 5px 0;
