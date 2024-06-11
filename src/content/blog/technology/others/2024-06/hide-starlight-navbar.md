@@ -1,6 +1,6 @@
 ---
 pubDatetime: 2024-06-12T00:41:00+08:00
-title: 如何隐藏 Starlight 的顶部的 Navbar
+title: 如何隐藏 Starlight 顶部的 Navbar
 slug: how-to-hide-starlight-navbar
 featured: false
 draft: false
