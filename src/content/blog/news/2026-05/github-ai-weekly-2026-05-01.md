@@ -12,63 +12,68 @@ tags:
   - News
 ---
 
-# GitHub AI 周报
-
-**发布日期：** 2026-04-30 | 第 17 期
-
 ## 核心趋势
 
-本周 GitHub AI 领域呈现出「Agent 生态爆发 + 多模态生成成熟」的双主线。以 Claude Code 为核心的开源工具链正在形成完整生态，从技能配置、上下文优化到代码搜索，开发者正在构建端到端的 AI 编程工作流。同时，视频生成和 Computer-Use Agent 等前沿技术开始走向实用化，不再局限于概念验证。最值得注意的是，中国团队在视频生成自动化和 API 中间件领域展现出强大创新能力。
+本周 GitHub AI 热度集中在 Claude 生态爆发和计算机代理（Computer-Use）成熟化。mattpocock/skills 以单周 30,945 stars 领涨，free-claude-code 跟随 14,666 stars，证明开发者对 AI 辅助编码工具的强劲需求。计算机代理基础设施（trycua/cua）首次进入前列，标志着 AI 从"对话式"向"操作系统级控制"跨越。同时，无审查图像/视频生成工具（Open-Generative-AI）流行，反映对内容自由的渴望。
 
 ## 技术热点
 
-- **Claude Code 生态**：free-claude-code、skills、andrej-karpathy-skills 三大项目形成完整工具链
-- **多模态生成**：Pixelle-Video 自动化短视频引擎、Open-Generative-AI 无限制生成工作室
-- **Agent 基础设施**：cua Computer-Use 平台、GenericAgent 自演进智能体、context-mode 上下文优化
+- Claude 生态：免费 claude-code 工具和技能配置库成为开发者刚需
+- Computer-Use Agents：桌面级控制智能体基础设施快速成熟
+- 多模态生成：AI 短视频引擎和开放式图像/视频生成平台
+- API 代理服务：DeepSeek 等国产模型 API 中间件需求旺盛
+- 自演进智能体：从种子代码自动生长技能树的新范式
 
 ## 深度洞察
 
-Top 项目集中反映了 AI 从「辅助工具」向「自主执行」的演进。free-claude-code 本周激增 16K stars，印证了市场对免费高质量 AI 编程工具的强烈需求。mattpocock/skills 和 andrej-karpathy-skills 的爆发说明开发者正在系统化优化 AI Agent 的行为模式，而非简单提示词工程。
+mattpocock/skills 之所以能单周增长 3 万 stars，核心是"实战经验直接变现"——它将顶级工程师的 AI 使用经验打包成可复用配置，降低了 Claude 学习成本。这与 Andrej Karpathy 的思路一脉相承：让 AI 更好地理解代码而非盲目生成。
 
-技术层面，context-mode 实现的 98% token 降耗和 GenericAgent 的 6x 效率提升，标志着 Agent 优化进入量化阶段。Pixelle-Video 的「全自动短视频引擎」定位精准，抓住了内容创作自动化的刚需。cua 的跨平台沙箱方案为 Computer-Use Agent 提供了标准化基础设施，这一方向有望成为下一个热点。
+计算机代理（trycua/cua）的崛起是更重要的信号。它不再是简单的 API 调用，而是提供完整的沙盒、SDK 和评测框架，让智能体真正能控制 macOS/Linux/Windows 桌面。这比 OpenAI 的 Computer-Use 更开放、更可定制，有望成为新的基础设施赛道。
 
 ## 中国力量
 
-中国团队表现亮眼。AIDC-AI 的 Pixelle-Video 定位 AI 全自动短视频引擎，本周增长 2.4K stars；CJackHwang 的 ds2api 提供 DeepSeek 到通用 API 的轻量级中间件，支持多账户轮换和多种部署方式。两个项目都体现了中国开发者在应用层面的敏锐洞察和工程落地能力。
+中国团队表现亮眼：AIDC-AI 的 Pixelle-Video 本周增长 2,064 stars，专注 AI 短视频自动化生产；CJackHwang 的 ds2api 增长 1,726 stars，为国产模型提供高性能 API 代理服务。两个项目都瞄准实际落地场景，技术务实性突出。
 
 ## 精选项目
-
-### free-claude-code
-
-- **链接：** https://github.com/Alishahryar1/free-claude-code
-- **数据：** 18,732 stars | +16,154 本周 | Python
-- **描述：** 在终端、VSCode 扩展或 Discord 中免费使用 Claude Code，支持语音交互
-- **关注理由：** 打破 AI 编程工具付费壁垒，提供 OpenClaw 式的多平台接入
 
 ### skills
 
 - **链接：** https://github.com/mattpocock/skills
-- **数据：** 46,372 stars | +24,702 本周 | Shell
-- **描述：** 真实工程师技能集，直接来自作者的 .claude 目录
-- **关注理由：** 系统化的 AI 编程行为优化指南，成为 Claude Code 生态核心
+- **数据：** 50,201 stars | +30,945 本周 | Shell
+- **描述：** Skills for Real Engineers. Straight from my .claude directory.
+- **关注理由：** 顶级工程师 AI 使用经验的实战沉淀，Claude Code 生态的核心资产
 
-### andrej-karpathy-skills
+### free-claude-code
 
-- **链接：** https://github.com/forrestchang/andrej-karpathy-skills
-- **数据：** 101,026 stars | +24,129 本周 | Shell
-- **描述：** 单文件 CLAUDE.md 配置，基于 Andrej Karpathy 对 LLM 编码陷阱的观察
-- **关注理由：** 权威视角的 AI 编程最佳实践，简单配置带来显著体验提升
-
-### Pixelle-Video
-
-- **链接：** https://github.com/AIDC-AI/Pixelle-Video
-- **数据：** 8,103 stars | +2,445 本周 | Python
-- **描述：** AI 全自动短视频引擎，端到端生成内容
-- **关注理由：** 抓住内容创作自动化刚需，中国团队在视频生成领域突破
+- **链接：** https://github.com/Alishahryar1/free-claude-code
+- **数据：** 19,303 stars | +14,666 本周 | Python
+- **描述：** Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)
+- **关注理由：** 破除 Claude Code 付费门槛，支持终端、VSCode、Discord 多端
 
 ### cua
 
 - **链接：** https://github.com/trycua/cua
-- **数据：** 15,302 stars | +1,615 本周 | HTML
-- **描述：** Computer-Use Agent 跨平台沙箱，提供标准化基础设施
-- **关注理由：** 为 Computer-Use Agent 提供标准化基础设施，有望成为下一个热点
+- **数据：** 15,433 stars | +1,842 本周 | HTML
+- **描述：** Open-source infrastructure for Computer-Use Agents. Sandboxes, SDKs, and benchmarks to train and evaluate AI agents that can control full desktops (macOS, Linux, Windows).
+- **关注理由：** 计算机代理基础设施，让 AI 真正控制桌面，OS 级智能体的关键里程碑
+
+### Open-Generative-AI
+
+- **链接：** https://github.com/Anil-matcha/Open-Generative-AI
+- **数据：** 10,479 stars | +3,799 本周 | JavaScript
+- **描述：** Uncensored, open-source alternative to Higgsfield AI, Freepik AI, Krea AI — Free, unrestricted AI image & video generation studio with 200+ models
+- **关注理由：** 200+ 模型的无审查生成式 AI 平台，突破内容限制
+
+### Pixelle-Video
+
+- **链接：** https://github.com/AIDC-AI/Pixelle-Video
+- **数据：** 10,567 stars | +2,064 本周 | Python
+- **描述：** AI-Powered Automated Short-Video Engine | end-to-end generative AI pipeline for short videos
+- **关注理由：** AI 全自动短视频引擎，端到端生成，中国团队在视频生成领域的工程突破
+
+### ds2api
+
+- **链接：** https://github.com/CJackHwang/ds2api
+- **数据：** 8,951 stars | +1,726 本周 | Python
+- **描述：** A lightweight API proxy for DeepSeek V3, compatible with OpenAI API standard, supporting multi-account rotation and multiple deployment methods
+- **关注理由：** 为国产模型提供高性能 API 代理服务，反映国产模型生态商业化探索
