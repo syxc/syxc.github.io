@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import AiPosts from "@layouts/AiPosts.astro";
+import getSortedPosts from "@utils/getSortedPosts";
+import getPagination from "@utils/getPagination";
+
+const allPosts = await getCollection("blog");
+const aiPosts = allPosts.filter(
+  post =>
+    post.slug?.startsWith("ai/") ||
+    post.slug?.includes("ai-builders") ||
+    post.data.tags?.includes("Builders")
+);
+
+const sortedPosts = getSortedPosts(aiPosts);
+
+const AI_POSTS_PER_PAGE = 5;
+
+const pagination = getPagination({
+  posts: sortedPosts,
+  page: 1,
+  isIndex: true,
+  postPerPage: AI_POSTS_PER_PAGE,
+});
+---
+
+<AiPosts {...pagination} />
