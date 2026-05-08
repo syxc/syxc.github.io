@@ -26,7 +26,7 @@ tags:
 
 ## 深度洞察
 
-mattpocock/skills 之所以能单周增长 3 万 stars，核心是"实战经验直接变现"——它将顶级工程师的 AI 使用经验打包成可复用配置，降低了 Claude 学习成本。这与 Andrej Karpathy 的思路一脉相承：让 AI 更好地理解代码而非盲目生成。
+mattpocock/skills 之所以能单周增长 3 万 stars，核心是“实战经验直接变现” --- 它将顶级工程师的 AI 使用经验打包成可复用配置，降低了 Claude 学习成本。这与 Andrej Karpathy 的思路一脉相承：让 AI 更好地理解代码而非盲目生成。
 
 计算机代理（trycua/cua）的崛起是更重要的信号。它不再是简单的 API 调用，而是提供完整的沙盒、SDK 和评测框架，让智能体真正能控制 macOS/Linux/Windows 桌面。这比 OpenAI 的 Computer-Use 更开放、更可定制，有望成为新的基础设施赛道。
 
