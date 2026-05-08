@@ -13,6 +13,7 @@ tags:
 ---
 
 # 📊 GitHub AI 周报
+
 **📅 2026-04-20 | 第 16 期**
 
 ## 【核心趋势】
@@ -40,42 +41,49 @@ NousResearch 的 hermes-agent 以 10.4 万 stars 登顶，核心卖点是"agent 
 ## 【精选项目】
 
 ### 1️⃣ hermes-agent
+
 - **链接：** https://github.com/NousResearch/hermes-agent
 - **数据：** 104K stars | +38K 本周 | Python
 - **描述：** 可随用户成长的智能 Agent 系统
 - **关注理由：** 提出"成长型 Agent"范式，突破静态对话限制
 
 ### 2️⃣ markitdown
+
 - **链接：** https://github.com/microsoft/markitdown
 - **数据：** 113K stars | +9K 本周 | Python
 - **描述：** 微软开源的文件转 Markdown 工具
 - **关注理由：** RAG 管道关键基础设施，企业级需求旺盛
 
 ### 3️⃣ andrej-karpathy-skills
+
 - **链接：** https://github.com/forrestchang/andrej-karpathy-skills
 - **数据：** 64K stars | +45K 本周 | 无语言标识
 - **描述：** 基于 Karpathy 观察的 CLAUDE.md 行为优化文件
 - **关注理由：** 单文件改善 AI 编码行为，极简主义设计
 
 ### 4️⃣ claude-mem
+
 - **链接：** https://github.com/thedotmack/claude-mem
 - **数据：** 64K stars | +15K 本周 | TypeScript
 - **描述：** 自动记录并压缩 Claude 编码会话的插件
 - **关注理由：** 会话记忆注入，让 AI 记住你的工作习惯
 
 ### 5️⃣ ai-hedge-fund
+
 - **链接：** https://github.com/virattt/ai-hedge-fund
 - **数据：** 56K stars | +4K 本周 | Python
 - **描述：** AI 对冲基金团队模拟系统
 - **关注理由：** 多 Agent 协作在金融决策场景的落地实践
 
 ### 6️⃣ voicebox
+
 - **链接：** https://github.com/jamiepine/voicebox
 - **数据：** 22K stars | +6K 本周 | TypeScript
 - **描述：** 开源语音合成工作室
 - **关注理由：** 降低语音创作门槛，支持自定义音色
 
 ### 7️⃣ Kronos
+
 - **链接：** https://github.com/shiyu-coder/Kronos
 - **数据：** 20K stars | +4K 本周 | Python
 - **描述：** 金融市场语言基础模型
