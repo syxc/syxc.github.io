@@ -9,8 +9,8 @@ export async function getStaticPaths() {
   const allPosts = await getCollection("blog");
   const aiPosts = allPosts.filter(
     post =>
-      post.slug?.startsWith("ai/") ||
-      post.slug?.includes("ai-builders") ||
+      post.id?.startsWith("ai/") ||
+      post.id?.includes("ai-builders") ||
       post.data.tags?.includes("Builders")
   );
 
@@ -27,8 +27,8 @@ const { page } = Astro.params;
 const allPosts = await getCollection("blog");
 const aiPosts = allPosts.filter(
   post =>
-    post.slug?.startsWith("ai/") ||
-    post.slug?.includes("ai-builders") ||
+    post.id?.startsWith("ai/") ||
+    post.id?.includes("ai-builders") ||
     post.data.tags?.includes("Builders")
 );
 

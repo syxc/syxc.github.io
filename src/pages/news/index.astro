@@ -7,10 +7,11 @@ import getPagination from "@utils/getPagination";
 
 // 只获取 GitHub AI 相关的文章
 const allPosts = await getCollection("blog");
-const githubAiPosts = allPosts.filter(post => 
-  post.slug?.includes('github-ai') || 
-  post.data.tags?.includes('GitHub') ||
-  post.data.tags?.includes('AI')
+const githubAiPosts = allPosts.filter(
+  post =>
+    post.id?.includes("github-ai") ||
+    post.data.tags?.includes("GitHub") ||
+    post.data.tags?.includes("AI")
 );
 
 const sortedPosts = getSortedPosts(githubAiPosts);
