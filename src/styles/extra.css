@@ -1,4 +1,17 @@
 /* ===== custom override ===== */
+
+/* Disable default View Transitions cross-fade to avoid Chrome jank */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 2;
+}
 :root {
   --ui-font-family-base:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
