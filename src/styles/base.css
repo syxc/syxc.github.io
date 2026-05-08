@@ -72,13 +72,10 @@
     @apply break-words hover:!text-skin-accent;
   }
   .prose table {
-    table-layout: fixed;
+    display: block;
     width: 100%;
-  }
-  .prose th,
-  .prose td {
-    word-break: break-word;
-    overflow-wrap: break-word;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .prose thead th:first-child,
   tbody td:first-child,
