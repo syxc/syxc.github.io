@@ -8,8 +8,7 @@ featured: true
 draft: true
 tags:
   - docs
-description:
-  Some rules & recommendations for creating or adding new posts using AstroPaper
+description: Some rules & recommendations for creating or adding new posts using AstroPaper
   theme.
 ---
 

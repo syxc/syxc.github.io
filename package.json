@@ -8,11 +8,12 @@
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
-    "format:check": "prettier --check . --plugin=prettier-plugin-astro",
-    "format": "prettier --write . --plugin=prettier-plugin-astro",
+    "format:check": "oxfmt --check src/config.ts src/types.ts src/components/ src/content/ src/layouts/ src/pages/ src/styles/ src/utils/",
+    "format": "oxfmt --write src/config.ts src/types.ts src/components/ src/content/ src/layouts/ src/pages/ src/styles/ src/utils/",
     "cz": "cz",
     "prepare": "husky install",
-    "lint": "eslint ."
+    "lint": "oxlint src/",
+    "lint:eslint": "eslint ."
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
@@ -43,20 +44,22 @@
     "eslint-plugin-astro": "^1.7.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.7",
+    "oxfmt": "^0.48.0",
+    "oxlint": "^1.63.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx,json,astro,css}": [
+      "oxfmt --write src/config.ts"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx,json,astro}": [
-      "prettier --write --plugin=prettier-plugin-astro"
-    ]
   }
 }
